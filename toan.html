@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu cá nhân</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+    <div class="card">
+        <img src="img/z7581481231751_6f8e63d2b6c2b3e161e254e7013d115c.jpg" alt="Ảnh cá nhân">
+        <h2>Lê Phúc Toàn</h2>
+        <p>Sinh viên</p>
+        <button onclick="showInfo()">Xem lý lịch chi tiết</button>
+    </div>
+
+    <div id="info" class="info">
+        <h3>📌 Thông tin chi tiết</h3>
+        <ul>
+            <li><b>Họ và tên:</b>Lê Phúc Toàn</li>
+            <li><b>Ngày sinh:</b> 26/11/2007</li>
+            <li><b>Quê quán:</b>Ấp Bình Phú, Xã Bình Trung, Đồng Tháp</li>
+            <li><b>Giới tính:</b> Nam</li>
+            <li><b>Từng học:</b> Trường mẫu giáo Đông Hòa</li>
+            <li><b>Hiện tại:</b> Sinh viên Trường Đại học Tiền Giang</li>
+            <li><b>Chuyên ngành:</b> Công nghệ thực phẩm</li>
+            <li><b>Sở thích:</b> Chơi game</li>
+            <li><b>Sở trường:</b> Bóng đá</li>
+            <li><b>Mục tiêu:</b> Tốt nghiệp đại học</li>
+        </ul>
+        <button onclick="hideInfo()">Đóng</button>
+    </div>
+
+    <script src="js5.js"></script>
+
+    
+        <div class="profile-card">
+    <!-- Nút xem việc đã làm -->
+    <button class="btn" onclick="toggleWork()">
+        Xem danh sách việc đã làm
+    </button>
+    <!-- Danh sách việc (ẩn ban đầu) -->
+    <div id="work-list">
+        <ul>
+            <li>Chọn lọc và tổng hợp nội dung</li>
+            <li>chỉnh sửa và kiểm tra nội dung bài thuyết trình</li>
+        </ul>
+    </div>
+</div>
+<script>
+function toggleWork() {
+    const list = document.getElementById("work-list");
+    if (list.style.display === "none" || list.style.display === "") {
+        list.style.display = "block";
+    } else {
+        list.style.display = "none";
+    }
+}
+</script>
+<button class="btn-info" onclick="window.location.href='index.html'">⬅ Quay lại trang nhóm</button>
+
+</body>
+</html>

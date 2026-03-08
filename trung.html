@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu cá nhân</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="card">
+        <img src="img/z7580998340460_5c172969645beed2fd53b6bcc1a2fe32.jpg" alt="Ảnh cá nhân">
+        <h2>Lê Thành Trung</h2>
+        <p>Sinh viên</p>
+        <button onclick="showInfo()">Xem lý lịch chi tiết</button>
+    </div>
+
+    <div id="info" class="info">
+        <h3>📌 Thông tin chi tiết</h3>
+        <ul>
+            <li><b>Họ và tên:</b>Lê Thành Trung</li>
+            <li><b>Ngày sinh:</b> 21/12/2007</li>
+            <li><b>Quê quán:</b>Ấp Thới, Xã Bình Trưng, Đồng Tháp</li>
+            <li><b>Giới tính:</b> Nam</li>
+            <li><b>Từng học:</b> Trường THPT Dưỡng Điềm</li>
+            <li><b>Hiện tại:</b> Sinh viên Trường Đại học Tiền Giang</li>
+            <li><b>Chuyên ngành:</b> Công nghệ thực phẩm</li>
+            <li><b>Sở thích:</b> Chơi game, ăn nhậu</li>
+            <li><b>Sở trường:</b> Chơi game giỏi</li>
+            <li><b>Mục tiêu:</b> Tốt nghiệp ra trường có việc để làm</li>
+        </ul>
+        <button onclick="hideInfo()">Đóng</button>
+    </div>
+
+    <script src="js3.js"></script>
+
+    
+        <div class="profile-card">
+    <!-- Nút xem việc đã làm -->
+    <button class="btn" onclick="toggleWork()">
+        Xem danh sách việc đã làm
+    </button>
+    <!-- Danh sách việc (ẩn ban đầu) -->
+    <div id="work-list">
+        <ul>
+            <li>Tìm kiếm chọn lọc nội dung chương 1</li>
+            <li>Kiểm tra và chỉnh sửa nội dung bài thuyết trình</li>
+        </ul>
+    </div>
+</div>
+<script>
+function toggleWork() {
+    const list = document.getElementById("work-list");
+    if (list.style.display === "none" || list.style.display === "") {
+        list.style.display = "block";
+    } else {
+        list.style.display = "none";
+    }
+}
+</script>
+<button class="btn-info" onclick="window.location.href='index.html'">⬅ Quay lại trang nhóm</button>
+
+</body>
+</html>

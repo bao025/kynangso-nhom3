@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 40px 0;
+    background: #f2f2f2;
+    font-family: "Times New Roman", serif;
+        background-image: url("img/z7563885714674_cee591cdd297d45e45436994a36cdc7c.jpg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+
+}
+
+/* Khung văn bản */
+.document {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px 50px;
+    line-height: 1.8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 50px;
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+/* Đoạn văn */
+p {
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+li {
+    font-size: 30px;
+}
+/* Danh sách */
+ul {
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+/* Nút quay lại */
+.back {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #365a82;
+    font-size: 25px;
+}
+
+.back a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}

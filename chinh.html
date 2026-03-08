@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu cá nhân</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="card">
+        <img src="img/z7578087350178_55889e8924d3080573960755838b9c73.jpg" alt="Ảnh cá nhân">
+        <h2> Nguyễn Trường Chinh</h2>
+        <p>Sinh viên</p>
+        <button onclick="showInfo()">Xem lý lịch chi tiết</button>
+    </div>
+
+    <div id="info" class="info">
+        <h3>📌 Thông tin chi tiết</h3>
+        <ul>
+            <li><b>Họ và tên:</b>Nguyễn Trường Chinh</li>
+            <li><b>Ngày sinh:</b> 20/11/2007</li>
+            <li><b>Quê quán:</b> Ấp Bắc B, Xã Bình Trưng, Đồng Tháp</li>
+            <li><b>Giới tính:</b> Nam</li>
+            <li><b>Từng học:</b> Trường THPT Dưỡng Điềm</li>
+            <li><b>Hiện tại:</b> Sinh viên Trường Đại học Tiền Giang</li>
+            <li><b>Chuyên ngành:</b>  Công nghệ thực phẩm</li>
+            <li><b>Sở thích:</b> Chơi game, câu cá</li>
+            <li><b>Sở trường:</b> Chơi thể thao và chơi game</li>
+            <li><b>Mục tiêu:</b> Tốt nghiệp loại xuất sắc</li>
+        </ul>
+        <button onclick="hideInfo()">Đóng</button>
+    </div>
+
+    <script src="js2.js"></script>
+
+    <div class="profile-card">
+    <!-- Nút xem việc đã làm -->
+    <button class="btn" onclick="toggleWork()">
+        Xem danh sách việc đã làm
+    </button>
+    <!-- Danh sách việc (ẩn ban đầu) -->
+    <div id="work-list">
+        <ul>
+            <li>Cung cấp thông tin dữ liệu</li>
+            <li>Thiết kế bài thuyết trình canva</li>
+            <li>Phân công bài thuyết trình</li>
+        </ul>
+        
+    </div>
+
+</div>
+<script>
+function toggleWork() {
+    const list = document.getElementById("work-list");
+    if (list.style.display === "none" || list.style.display === "") {
+        list.style.display = "block";
+    } else {
+        list.style.display = "none";
+    }
+}
+</script>
+<button class="btn-info" onclick="window.location.href='index.html'">⬅ Quay lại trang nhóm</button>
+</body>
+</html>

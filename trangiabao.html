@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu cá nhân</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="card">
+        <img src="img/z7581005512455_398471f163ee886e4bcc4e6c0c5e8079.jpg" alt="Ảnh cá nhân">
+        <h2>Trần Gia Bảo</h2>
+        <p>Sinh viên</p>
+
+        <button onclick="showInfo()">Xem lý lịch chi tiết</button>
+    </div>
+
+    <div id="info" class="info">
+        <h3>📌 Thông tin chi tiết</h3>
+        <ul>
+            <li><b>Họ và tên:</b>Trần Gia Bảo</li>
+            <li><b>Ngày sinh:</b> 16/12/2007</li>
+            <li><b>Quê quán:</b>Ấp 1, Xã Tân Phước 3, Đồng Tháp</li>
+            <li><b>Giới tính:</b> Nam</li>
+            <li><b>Từng học:</b> Trường Cao Đẳng Nghề Tiền Giang</li>
+            <li><b>Hiện tại:</b> Sinh viên Trường Đại học Tiền Giang</li>
+            <li><b>Chuyên ngành:</b> Công nghệ thực phẩm</li>
+            <li><b>Sở thích:</b> Đọc truyện, xem phim và chơi game</li>
+            <li><b>Sở trường:</b> Chơi game, phân tích và đánh giá phim</li>
+            <li><b>Mục tiêu:</b> Tốt nghiệp và có 1 công việc tốt</li>
+        </ul>
+        <button onclick="hideInfo()">Đóng</button>
+    </div>
+
+    <script src="js1.js"></script>
+
+        <div class="profile-card">
+    <!-- Nút xem việc đã làm -->
+    <button class="btn" onclick="toggleWork()">
+        Xem danh sách việc đã làm
+    </button>
+    <!-- Danh sách việc (ẩn ban đầu) -->
+    <div id="work-list">
+        <ul>
+            <li>Thiết kế giao diện canva nhóm</li>
+            <li>Kiểm tra nội dung</li>
+            <li>Thuyết trình bài tập nhóm</li>
+            <li>Lên ý tưởng và thiết kế website</li>
+        </ul>
+    </div>
+</div>
+<script>
+function toggleWork() {
+    const list = document.getElementById("work-list");
+    if (list.style.display === "none" || list.style.display === "") {
+        list.style.display = "block";
+    } else {
+        list.style.display = "none";
+    }
+}
+</script>
+<button class="btn-info" onclick="window.location.href='index.html'">⬅ Quay lại trang nhóm</button>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu cá nhân</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <div class="card">
+        <img src="img/z7339681748830_cfe3c09682fe173305bcbb021b559146.jpg" alt="Ảnh cá nhân">
+        <h2>Dương Hữu Nghĩa</h2>
+        <p>Sinh viên</p>
+        <button onclick="showInfo()">Xem lý lịch chi tiết</button>
+    </div>
+
+    <div id="info" class="info">
+        <h3>📌 Thông tin chi tiết</h3>
+        <ul>
+            <li><b>Họ và tên:</b>Dương Hữu Nghĩa</li>
+            <li><b>Ngày sinh:</b> 20/8/2007</li>
+            <li><b>Quê quán:</b>Ấp Long Bình B, Xã Long Hưng, Đồng Tháp</li>
+            <li><b>Giới tính:</b> Nam</li>
+            <li><b>Từng học:</b> Trường trung Tâm GDNN-GDTX</li>
+            <li><b>Hiện tại:</b> Sinh viên Trường Đại học Tiền Giang</li>
+            <li><b>Chuyên ngành:</b> Công nghệ thực phẩm</li>
+            <li><b>Sở thích:</b> Gundam</li>
+            <li><b>Sở trường:</b> Lắp ráp mô hình</li>
+            <li><b>Mục tiêu:</b> Tốt nghiệp ra trường và có được 1 công việc ổn định để lo cho gia đình</li>
+        </ul>
+        <button onclick="hideInfo()">Đóng</button>
+    </div>
+
+    <script src="js4.js"></script>
+
+    
+        <div class="profile-card">
+    <!-- Nút xem việc đã làm -->
+    <button class="btn" onclick="toggleWork()">
+        Xem danh sách việc đã làm
+    </button>
+    <!-- Danh sách việc (ẩn ban đầu) -->
+    <div id="work-list">
+        <ul>
+            <li>Tìm kiếm chọn lọc nội dung chương 2</li>
+            <li>Kiểm tra và chỉnh sửa nội dung bài thuyết trình</li>
+        </ul>
+    </div>
+</div>
+<script>
+function toggleWork() {
+    const list = document.getElementById("work-list");
+    if (list.style.display === "none" || list.style.display === "") {
+        list.style.display = "block";
+    } else {
+        list.style.display = "none";
+    }
+}
+</script>
+<button class="btn-info" onclick="window.location.href='index.html'">⬅ Quay lại trang nhóm</button>
+
+</body>
+</html>

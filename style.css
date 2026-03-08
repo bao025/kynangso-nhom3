@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("img/z7563885714674_cee591cdd297d45e45436994a36cdc7c.jpg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); 
+    z-index: -1;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background: white;
+    padding: 30px;
+    border-radius: 50px;
+        background: #b4c3f5f2;
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+
+
+.member-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.member-box img {
+    width: 120px;          
+    height: 120px;
+    border-radius: 50%;    
+    object-fit: cover;     
+    object-position: center;
+    border: 3px solid #3498db;
+    margin-bottom: 12px;
+    background: #ddd;      
+}
+
+.member-box h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.role {
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.member-box p {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f6391;
+}
+
+
+
+.member-card h3 {
+  margin: 8px 0;
+}
+
+.member-card p {
+  margin: 4px 0;
+  font-size: 30px;
+
+}
+
+.btn-info {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 30px;
+  color: white;
+  cursor: center;
+}
+
+.btn-info:hover {
+  background-color: #45a049;
+}
+.members-container {
+    display: flex;
+    justify-content: center;   /* Căn giữa cả hàng */
+    gap: 20px;                 /* Khoảng cách giữa các khung */
+    flex-wrap: wrap;           /* Tự xuống hàng nếu màn hình nhỏ */
+    margin-top: 30px;
+}
+
+.member-card {
+    width: center;              /* Cố định kích thước khung */
+    border: 8px solid #000000;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #f9fff9;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.tongket-btn {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.tongket-btn button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tongket-btn button:hover {
+    background-color: #27ae60;
+}
+
+
+@media (max-width: 1000px) {
+    .grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
